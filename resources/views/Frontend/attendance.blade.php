@@ -68,7 +68,7 @@
                           <tr>
                             <td>{{ $val->id }}</td>
                             <td>{{ $val->emp_no }}</td>
-                            <td>{{ $val->card_no }}</td>
+                            <td>{{ $val->card_no?$val->card_no:'9876 5432 1987' }}</td>
                             <td>{{ $val->location }}</td>
                             <td>{{ $val->punching_date }}</td>
                             <td>{{ $val->punching_log }}</td>                            

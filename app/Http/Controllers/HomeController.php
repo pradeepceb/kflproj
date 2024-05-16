@@ -1737,8 +1737,8 @@ class HomeController extends Controller
 
   public function AttendanceCreate(Request $request)
   {
-    // $zkLibrary = new ZKLibrary('172.168.1.208', 4370); //polosoftech biometrics
-    $zkLibrary = new ZKLibrary('192.168.10.55', 4370); //samaj biometrics
+     $zkLibrary = new ZKLibrary('172.168.1.208', 4370); //polosoftech biometrics
+    //$zkLibrary = new ZKLibrary('192.168.10.55', 4370); //samaj biometrics
     $zkLibrary->connect();
     $zkLibrary->enableDevice();
     $current_date = $request->date;
